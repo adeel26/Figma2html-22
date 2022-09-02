@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Income Tax Calculator Pakistan 2022-23</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="shortcut icon"
+            href="./images/favicon-32x32.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav>
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <img
+                        src="logo.png"
+                        alt="calculator-logo"
+                    />
+                </div>
+                <ul class="navbar-links">
+                    <a href="#calculator"><li>Calculator</li></a>
+                    <a href="#tax-slab"><li>Tax Slabs</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="#about-us"><li>About</li></a>
+                </ul>
+                <div class="navbar-burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- calculator section -->
+        <section id="calculator">
+            <div class="calculator">
+                <div class="calculator-container">
+                    <h1 class="calculator-header">
+                        TAX CALCULATOR PAKISTAN 2022-2023
+                    </h1>
+                    <p class="calculator-para">
+                        This is latest tax calculator as per 2022-2023 budget
+                        presented by Government Of Pakistan.
+                    </p>
+                    <div class="calculator-input">
+                        <input
+                            type="text"
+                            name="amount"
+                            id="amount"
+                            placeholder="Enter Amount Here"
+                        />
+                        <select id="salary-selection">
+                            <option>Monthly</option>
+                            <option>Anually</option>
+                        </select>
+                        <button id="calculate-btn">Calculate</button>
+            </div>
+        </section>
+
+        <!-- calculation result section-->
+        <section id="calculation-result"></section>
+
+
+        <!-- tax slab section -->
+        <section id="tax-slab">
+            <div class="tax-slab">
+                <div class="tax-slab-container">
+                    <h1>Income Tax Slabs</h1>
+                    <br>
+                    <p>As per Federal Budget 2022-2023 presented by Government of Pakistan, following slabs and income tax rates will be applicable for salaried persons for the year 2022-2023:</p>
+                    <div class="tax-slab-content">
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>Where the taxable salary income does not exceed Rs. 600,000 the rate of income tax is 0%.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income does not exceed
+                                    PKR. 600,000 then the rate of the income tax
+                                    is 0%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Where the taxable salary income exceeds Rs. 600,000 but does not exceed Rs. 1,200,000 the rate of income tax is Rs. 100
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR.
+                                    600,000 but does not exceed PKR. 1.2 million
+                                    then the rate of income tax is 2.5% of the
+                                    amount exceeding PKR. 600,000.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Where the taxable salary income exceeds Rs. 1,200,000 but does not exceed Rs. 2,400,000 the rate of income tax is 7% of the amount exceeding Rs. 1,200,000.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the taxable annual income exceeds PKR.
+                                    1.2 million but does not exceed PKR. 2.4
+                                    million then the rate of income tax is PKR.
+                                    15,000 + 12.5% of the amount exceeding PKR.
+                                    1.2 million.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Where the taxable salary income exceeds Rs. 2,400,000 but does not exceed Rs. 3,600,000 the rate of income tax is Rs. 84,000 + 12.5% of the amount exceeding Rs. 2,400,000.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 2.4
+                                    million but does not exceed PKR. 3.6 million
+                                    then the rate of income tax is flat PKR
+                                    165,000 + 20% of the amount exceeding PKR.
+                                    2.4 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Where the taxable salary income exceeds Rs. 3,600,000 but does not exceed Rs. 6,000,000 the rate of income tax is Rs. 234,000 + 17.5% of the amount exceeding Rs. 3,600,000.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 3.6
+                                    million but does not exceed PKR. 6 million
+                                    then the rate of income tax is flat PKR.
+                                    405,000 + 25% of the amount exceeding PKR.
+                                    3.6 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>
+                                    Where the taxable salary income exceeds Rs. 6,000,000 but does not exceed Rs. 12,000,000 the rate of income tax is Rs. 654,000 + 22.5% of the amount exceeding Rs. 6,000,000.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR 6
+                                    Million but does not exceed PKR. 12 million
+                                    then the rate of income tax is flat PKR
+                                    1.005 million + 32.5% of the amount
+                                    exceeding PKR. 6 million
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tax-slab-accordion">
+                            <div class="tax-slab-accordion-title">
+                                <img
+                                    src="plus.png"
+                                    alt="plus icon"
+                                    class="accordion-plus"
+                                />
+                                <img
+                                    src="minus.png"
+                                    alt="minus icon"
+                                    class="accordion-minus"
+                                />
+                                <p>Where the taxable salary income exceeds Rs. 12,000,000 the rate of income tax is Rs. 2,004,000 + 32.5% of the amount exceeding Rs. 12,000,000.
+                                </p>
+                            </div>
+                            <div class="tax-slab-accordion-para">
+                                <p>
+                                    If the annual salary income exceeds PKR. 12
+                                    million then the rate of income tax is flat
+                                    PKR 2.955 million + 35% of the amount
+                                    exceeding PKR. 12 million
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact-section -->
+        <section id="contact">
+            <div class="contact">
+                <div class="contact-container">
+                    <h1>Contact Us</h1>
+                    <div class="contact-content">
+                        <div class="contact-content-container">
+                            <div class="contact-content-left">
+                                <h1>Submit your tax queries?</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.
+                                </p>
+                            </div>
+                            <div class="contact-content-right">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Full Name"
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Email Address"
+                                />
+                                <input
+                                    type="text"
+                                    name="query"
+                                    id="query-input"
+                                    placeholder="your query?"
+                                />
+                                <button>Ask Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about us section -->
+        <section id="about-us">
+            <div class="about-us">
+                <div class="about-us-container">
+                    <h1>About Us</h1>
+                    <div class="about-us-para">
+                        <p>
+                            We develop high-quality websites, apps and desktop apps. We also provide Cloud and DevOps support for your software/company. Our aim is to bring your software concept from development to cloud. We are fully agile so we present your software and take feedback from you regularly. We provide best after service support to our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer>
+            <div class="footer">
+                <div class="footer-social-links">
+                    <img src="Ellipse 9.png" alt="facebook logo" />
+                    <img src="Ellipse 11.png" alt="instagram logo" />
+                </div>
+                <p>
+                    Designed and Developed by DevelopEirs &copy; 2022
+                    DevelopEirs
+                </p>
+                <div class="footer-contact">
+                    <p>Founder Omer Almas</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

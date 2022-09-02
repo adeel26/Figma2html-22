@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(165.96deg, #020074 9.73%, #7C0070 75.78%);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.navbar-container{
+    width: 85%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-logo img{
+    width: 70px;
+}
+
+.navbar-burger{
+    display: none;
+}
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 65px;
+    text-decoration: none;
+}
+
+/* calculator-section */
+.calculator{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("calculator_header_bg.png");
+    background-size: 100% 100%;
+}
+
+.calculator::before{
+    content: "";
+    background: url("./images/c-mo-saber-las-caracter-sticas-y-especificaciones-de-mi-celular-con-el-imei-o-los-ajustes\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.calculator-container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0;
+}
+
+.calculator-header{
+    color: #020074;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calculator-para{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.calculator-input{
+    display: flex;
+    align-items: center;
+}
+
+.calculator-input input{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding-left: 20px;
+    outline: none;
+    width: 240px;
+}
+
+.calculator-input select{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding: 0 20px;
+    width: 240px;
+    color: gray;
+    margin: 0 60px;
+    outline: none;
+}
+#calculate-btn {
+    color: #FFFFFF;
+}
+
+.calculator-input button{
+    background: #020074;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    width: 240px;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.calculator-terms{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* calculation result section */
+.calculation-result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+}
+
+.calculation-result-container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    max-width: 1336px;
+}
+
+.calculation-chart-container{
+    width: 300px;
+}
+
+.calculation-chart-tax-container{
+    display: flex;
+    align-items: center;
+}
+
+.calculation-chart-tax{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 80px 5px 0 0;
+}
+
+.calculation-chart-tax-slab-header{
+    margin: 40px 0 20px 0;
+    font-size: 25px;
+}
+
+.calculation-chart-tax-slab-para{
+    font-weight: 500;
+}
+
+.calculation-chart-tax-box{
+    margin-left: 20px;
+}
+
+.calculation-chart-tax-box-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.calculation-chart-tax-box-container p{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.calculation-chart-tax-color{
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+}
+
+.calculation-chart-tax-color.red{
+    background-color: RGB(244, 83, 77);
+}
+
+.calculation-chart-tax-color.blue{
+    background-color: RGB(91, 161, 226);
+}
+
+.calculation-result-content{
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 0;
+}
+
+.calculation-result-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculation-result-box{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.calculation-result-box > h1{
+    margin: 10px 0;
+}
+
+.calculation-result-box > hr{
+    width: 100%;
+}
+
+.calculation-result-box-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calculation-result-box-container > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+
+.calculation-result-box-container > div > p{
+    font-weight: 600;
+}
+
+.red-deduction{
+    color: red;
+}
+
+.green-after-salary{
+    color: rgb(0, 172, 0);
+}
+
+.calculation-details{
+    width: 100%;
+}
+
+.calculation-details-box > h1{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.calculation-details-box > hr{
+    width: 100%;
+}
+
+.calculation-details-box{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.calculation-details-box-container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calculation-details-box-pair{
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+.calculation-details-box-pair > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+}
+
+.calculation-details-box-pair > div > p{
+    font-weight: 600;
+}
+
+/* tax links 
+.tax-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tax-links-container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    max-width: 1337px;
+}
+
+.tax-links-documents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tax-links-documents:hover svg{
+    transform: translateY(-10px);
+}
+
+.tax-links-documents svg{
+    margin-bottom: 40px;
+    color: RGB(253, 182, 41);
+    transition: all 0.3s ease;
+}
+
+.tax-links-documents h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tax-links-documents p{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.tax-links-documents a{
+    text-decoration: none;
+    font-weight: 700;
+    color: RGB(253, 182, 41);
+    transition: all 0.3s ease;
+}
+
+.tax-links-documents a:hover{
+    color: RGB(253, 160, 41);
+}
+
+.tax-links-download{
+    display: flex;
+    justify-content: center;
+}
+
+.tax-links-download a{
+    margin-right: 10px;
+} */
+
+/* tax slab section */
+.tax-slab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: RGB(247, 247, 247);
+}
+
+.tax-slab-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1337px;
+}
+
+.tax-slab-container h1{
+    margin: 55px 0 0 0;
+    color: #7C0070;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tax-slab-content{
+    width: 100%;
+    margin: 38px 0 70px 0;
+}
+
+.tax-slab-accordion{
+    width: 100%;
+    background-color: RGB(239, 239, 238);
+    margin-bottom: 20px;
+    padding: 12px 0 12px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tax-slab-accordion-title{
+    display: flex;
+    align-items: center;
+}
+
+.tax-slab-accordion-title img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.tax-slab-accordion-title p{
+    font-weight: 600;
+}
+
+.tax-slab-accordion-para{
+    max-height: 0;
+    overflow: hidden;
+    background-color: RGB(239, 239, 238);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.accordion-minus{
+    display: none;
+}
+
+.tax-slab-accordion.active .tax-slab-accordion-para{
+    overflow: visible;
+    opacity: 1;
+}
+
+.tax-slab-accordion.active .accordion-plus{
+    display: none;
+}
+
+.tax-slab-accordion.active .accordion-minus{
+    display: block;
+}
+
+.tax-slab-accordion-para p{
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    margin: 10px 0 0 15px;
+}
+
+/* contact section */
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("contact.png");
+    background-size: 100% 100%;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container > h1{
+    margin: 55px 0 38px 0;
+    color: #7C0070;
+    font-size: 25px;
+}
+
+.contact-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-content-container{
+    width: 85%;
+    max-width: 1337px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content::before{
+    content: "";
+    background: url("./images/05-Contact-Us\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-content-left h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7C0070;
+}
+
+.contact-content-left p{
+    font-size: 18px;
+}
+
+.contact-content-right{
+    height: 440px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 50px 0;
+    box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-content-right input{
+    padding-left: 20px;
+    margin-top: 20px;
+    height: 52px;
+    width: 90%;
+    border: 2px solid rgba(174, 174, 174, 0.92);
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-content-right input::placeholder{
+    font-weight: 600;
+}
+
+.contact-content-right #query-input{
+    padding: 0 0 120px 20px;
+    margin-top: 20px;
+    height: 160px;
+    width: 90%;
+    border: 2px solid rgba(174, 174, 174, 0.92);
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-content-right #query-input::placeholder{
+    font-weight: 600;
+}
+
+.contact-content-right button{
+    height: 52px;
+    width: 90%;
+    margin: 20px 0 15px 0;
+    border: 2px solid #476CEE;
+    background-color: #020074;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-container{
+    max-width: 1337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us h1{
+    margin: 70px 0 50px 0;
+    color: #7C0070
+    font-size: 25px;
+}
+
+.about-us-para{
+    width: 90%;
+    margin-bottom: 80px;
+}
+
+.about-us-para p{
+    text-align: center;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #020074 0%, #7C0070 100%);
+}
+
+.footer-social-links{
+    margin: 30px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.footer-social-links img{
+    border: 7px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+
+.footer p{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-contact{
+    margin: 10px 0 5px 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+    .calculator-input select{
+        margin: 0 10px;
+    }
+
+    .contact-content-container{
+        width: 90%;
+    }
+
+    .contact-content-left{
+        width: calc(100% - 460px);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    nav.active{
+        height: 240px;
+    }
+
+    .navbar-links a{
+        margin: 10px 0 0 0;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-links.active{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        flex-direction: column;
+    }
+
+    .navbar-burger{
+        height: 18px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-burger div{
+        height: 3px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .calculator-input{
+        flex-direction: column;
+    }
+
+    .calculator-container{
+        margin: 100px 0;
+    }
+
+    .calculator-input select{
+        margin: 20px 0;
+    }
+
+    .calculator-container p{
+        text-align: center;
+    }
+
+    .calculation-result-container{
+        flex-direction: column;
+    }
+
+    .calculation-result-content{
+        width: 100%;
+    }
+
+    .calculation-result-content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculation-result-box{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .calculation-chart-tax{
+        width: 100%;
+    }
+
+    .calculation-chart-tax-slab-header{
+        text-align: center;
+    }
+
+    .calculation-chart-tax-slab-para{
+        text-align: center;
+    }
+
+    .calculation-chart-container{
+        width: 300px;
+    }
+
+    .calculation-chart-tax-container{
+        flex-direction: column;
+    }
+
+    .calculation-chart-tax-box{
+        margin-top: 20px;
+    }
+
+    .tax-links-container{
+        flex-direction: column;
+    }
+
+    .tax-links-documents{
+        margin-bottom: 100px;
+    }
+
+    .tax-links-download{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tax-links-download a{
+        margin: 0 0 5px 0;
+    }
+
+    .contact-content-container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-content-right{
+        width: 100%;
+    }
+
+    .contact-content-left{
+        width: 100%;
+    }
+
+    .contact-content-left h1{
+        margin-top: 20px;
+    }
+
+    .contact-content-left p{
+        text-align: center;
+    }
+}
